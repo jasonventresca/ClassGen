@@ -11,15 +11,15 @@ namespace Math
 
 /**
  * operator<<
- * @param   (std::ostream&) os
- * @param   (const Tensor&) tensor
+ * @param   (std::ostream&) lhs
+ * @param   (const Tensor&) rhs
  * @return  (std::ostream&)
  */
-std::ostream& operator<<(std::ostream& os, const Tensor& tensor)
+std::ostream& operator<<(std::ostream& lhs, const Tensor& rhs)
 {
-  os << "Contents of Tensor object:" << std::endl;
+  lhs << "Contents of Tensor object:" << std::endl;
   
-  return os;
+  return lhs;
 }
 
 } // namespace Math
